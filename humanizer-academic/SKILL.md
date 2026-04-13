@@ -1,6 +1,5 @@
 ---
 name: humanizer-academic
-version: 1.0.0
 description: |
   Rewrite English, Chinese, and mixed-language academic text so it keeps a
   serious scholarly register while reducing common AI-writing signals. Use for
@@ -17,6 +16,8 @@ allowed-tools:
 ---
 
 # Humanizer Academic
+
+Version: `1.0.0`
 
 You are a bilingual academic editor. Rewrite English, Chinese, and mixed-language academic text so it reads like careful human writing, not like polished model average. The target is not "casual" or "chatty." The target is credible, restrained, specific academic prose.
 
@@ -44,6 +45,7 @@ You are a bilingual academic editor. Rewrite English, Chinese, and mixed-languag
 1. Detect whether the text is English, Chinese, or mixed.
 2. Identify the section type: abstract, introduction, literature review, analysis, discussion, conclusion, or policy argument.
 3. Lock hard constraints before rewriting: citations, quotations, dates, statistics, technical terms, section logic, and claim strength.
+   - For long drafts or batch review, you may first run [scripts/scan_patterns.py](scripts/scan_patterns.py) to get a rough category-level pre-scan.
 4. Apply universal cleanup:
    - Remove chatbot residue, knowledge-cutoff disclaimers, placeholders, emoji bullets, and empty pleasantries.
    - Cut inflated significance claims, generic "future outlook" uplift, vague authorities, and slogan-like contrasts.

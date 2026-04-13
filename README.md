@@ -17,7 +17,7 @@ On each update, keep the version in sync in:
 
 - `humanizer-academic/`: installable skill folder
 - `humanizer-academic/references/`: English rules, Chinese rules, and academic-register guidance
-- `eval/`: bilingual evaluation set and manifest
+- `eval/`: bilingual evaluation set, rubric, scripts, and reports
 
 ## Install
 
@@ -40,3 +40,19 @@ Use this set to check three things:
 1. Does the rewrite reduce obvious AI patterns?
 2. Does it preserve meaning and academic seriousness?
 3. Does it avoid over-humanizing into casual prose?
+
+## Evaluation workflow
+
+Run the baseline heuristic scan:
+
+```bash
+python3 eval/scripts/run_baseline_eval.py
+```
+
+Run the structure audit for the skill folder:
+
+```bash
+python3 eval/scripts/audit_skill_structure.py
+```
+
+Current generated reports live in `eval/results/`.

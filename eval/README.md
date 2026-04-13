@@ -10,6 +10,13 @@ This evaluation set contains ten AI-generated papers on one shared topic:
 - 2 languages per model: Chinese and English
 - Format: Markdown
 
+## Tooling
+
+- `rubric.md`: before/after evaluation rubric for rewritten outputs
+- `scripts/run_baseline_eval.py`: heuristic baseline scan over the source documents
+- `scripts/audit_skill_structure.py`: no-dependency audit of the skill folder structure
+- `results/`: generated baseline and audit reports
+
 ## Files
 
 - `AIgenPapers/GPT Chi.md`
