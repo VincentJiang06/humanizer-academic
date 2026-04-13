@@ -55,4 +55,19 @@ Run the structure audit for the skill folder:
 python3 eval/scripts/audit_skill_structure.py
 ```
 
+Generate rewritten outputs for the full evaluation set:
+
+```bash
+python3 eval/scripts/run_codex_rewrites.py --output-dir eval/outputs/codex-gpt-5.4
+```
+
+Compare source and rewritten heuristic scores:
+
+```bash
+python3 eval/scripts/compare_eval_results.py \
+  --rewritten eval/results/codex-gpt-5.4.json \
+  --json-out eval/results/codex-gpt-5.4-compare.json \
+  --md-out eval/results/codex-gpt-5.4-compare.md
+```
+
 Current generated reports live in `eval/results/`.

@@ -15,6 +15,9 @@ This evaluation set contains ten AI-generated papers on one shared topic:
 - `rubric.md`: before/after evaluation rubric for rewritten outputs
 - `scripts/run_baseline_eval.py`: heuristic baseline scan over the source documents
 - `scripts/audit_skill_structure.py`: no-dependency audit of the skill folder structure
+- `scripts/run_codex_rewrites.py`: batch rewrite runner using `codex exec`
+- `scripts/compare_eval_results.py`: before/after comparison over heuristic evaluation outputs
+- `outputs/`: generated rewritten papers and manifests
 - `results/`: generated baseline and audit reports
 
 ## Files

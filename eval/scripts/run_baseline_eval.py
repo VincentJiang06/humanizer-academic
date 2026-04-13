@@ -19,7 +19,7 @@ from typing import Iterable
 
 
 ZH_RULES: dict[str, list[str]] = {
-    "dash_drama": [r"——", r"—"],
+    "dash_drama": [r"——", r"(?<!\d)—(?!\d)"],
     "negative_parallelism": [
         r"不是.{0,30}而是",
         r"不仅.{0,20}(还|更)",
@@ -88,7 +88,7 @@ ZH_RULES: dict[str, list[str]] = {
         r"作为AI",
         r"知识截止",
         r"💡|✅|🚀|📌|✨",
-        r"\*\*[^*\n]{1,40}[:：]\*\*",
+        r"\*\*(?!(?:关键词|关键字)[:：]\*\*)[^*\n]{1,40}[:：]\*\*",
     ],
 }
 
@@ -162,7 +162,7 @@ EN_RULES: dict[str, list[str]] = {
     ],
     "style_residue": [
         r"—",
-        r"\*\*[^*\n]{1,40}:\*\*",
+        r"\*\*(?!(?:Keywords?|Key words?)[:：]\*\*)[^*\n]{1,40}[:：]\*\*",
         r"[🚀💡✅📌✨]",
         r"\bI hope this helps\b",
         r"\bOf course!\b",

@@ -23,7 +23,7 @@
       ],
       [
         "style_residue",
-        25
+        23
       ],
       [
         "inflation",
@@ -66,11 +66,6 @@
         "total_hits": 49
       },
       {
-        "doc_id": "kimi-en",
-        "hits_per_1k_tokens": 6.07,
-        "total_hits": 33
-      },
-      {
         "doc_id": "gpt-zh",
         "hits_per_1k_tokens": 6.05,
         "total_hits": 24
@@ -79,6 +74,11 @@
         "doc_id": "mimo-en",
         "hits_per_1k_tokens": 5.98,
         "total_hits": 20
+      },
+      {
+        "doc_id": "kimi-en",
+        "hits_per_1k_tokens": 5.88,
+        "total_hits": 32
       }
     ]
   },
@@ -106,7 +106,7 @@
         "dash_drama": [
           "是传统物流和贸易中心地位继续受区域竞争挤压，IMF 也明确指出，香港传统增长动力——尤其物流与贸易角色——正在承压。未来五年的香港，若不能持续吸引人才、提高劳动生产率并推进产业升级，增长中枢就很容易被这些结构性因素往下拉。 外部环境则构成另一",
           "位继续受区域竞争挤压，IMF 也明确指出，香港传统增长动力——尤其物流与贸易角色——正在承压。未来五年的香港，若不能持续吸引人才、提高劳动生产率并推进产业升级，增长中枢就很容易被这些结构性因素往下拉。 外部环境则构成另一重不确定性。2026-",
-          "# 香港过去五年经济发展与未来五年经济展望（2021—2025；2026—2030） ## 中文版 ### 摘要 如果把 2021 年到 2025 年视为一个完整周期，香港经济的关键词并不是单纯的“疫后复苏”"
+          "算只有 175 亿港元，低于原来估算。换言之，香港财政与增长模式正在被迫从“地价—物业—交易税—财富效应”的旧循环中抽离出来。 这种抽离并不意味着香港失去财政稳定性，但确实意味着财政运作模式必须调整。2024-25 年度综合赤字预计为 87"
         ],
         "negative_parallelism": [
           "摘要 如果把 2021 年到 2025 年视为一个完整周期，香港经济的关键词并不是单纯的“疫后复苏”，而是“在连续冲击中重组增长模式”。这五年里，香港先经历了 2021 年由外贸和政策支持带动的强劲反弹，随后在 2022 年因疫情反复与外部金融收紧再度收缩；2023",
@@ -250,10 +250,10 @@
         "uplift": 0,
         "surface_analysis": 0,
         "vague_attribution": 0,
-        "style_residue": 5
+        "style_residue": 4
       },
-      "total_hits": 13,
-      "hits_per_1k_tokens": 1.67,
+      "total_hits": 12,
+      "hits_per_1k_tokens": 1.54,
       "top_examples": {
         "dash_drama": [
           "政策制定者关注的焦点。2020年至2029年这一时期对香港而言具有特殊的历史意义——这既是一个充满挑战的十年开端，也是香港在国家\"十四五\"规划支持下重新定位、谋求高质量发展的关键窗口期。 过去五年（2020-2024年），香港经济经历了前所未",
@@ -269,9 +269,9 @@
           "香港过去五年的经济发展历程，深入剖析当前经济现状，并基于现有政策框架和宏观趋势，对未来五年的发展前景进行科学预测，为相关研究和政策制定提供参考。 --- ### 第二章 过去五年经济发展回顾（2020-2024） #### 2.1 宏观经济表现：从衰退到复苏 香港经济在过去五年经"
         ],
         "style_residue": [
-          "重点发展方向包括人工智能产业、绿色金融、高端专业服务和粤港澳大湾区深度融合。 **关键词：** 香港经济；粤港澳大湾区；北部都会区；IPO市场；人才政策 --- ### 第一章 引言 香港作为全球领先的国际金融中心、贸易枢纽和航运中心，其经济发展历",
           "4f2e094ac75465a44)。全年经济增长预测维持在2%-3% 。 **增长动力分析：** - **外部需求**：受益于全球对AI相关电子产品的强劲需求和贸易活动前置效应，2025年第一季度货物出口实质增长8.4%[](https://www.ne",
-          "约300平方公里，占香港总面积三分之一）是未来五年香港经济增长的最重要引擎。 **关键里程碑：** - 2026年：洪水桥产业园投入运作；屯马线洪水桥站工程展开[](https://www.dotdotnews.com/a/202505/28/AP6836"
+          "约300平方公里，占香港总面积三分之一）是未来五年香港经济增长的最重要引擎。 **关键里程碑：** - 2026年：洪水桥产业园投入运作；屯马线洪水桥站工程展开[](https://www.dotdotnews.com/a/202505/28/AP6836",
+          "AP6836d0eee4b0a242bf029362.html)。 **经济贡献预测：** 新田科技城全面运营后预计每年贡献GDP至少2,500亿港元[](http://www.locpg.gov.cn/20260107/2686e45015e04d"
         ]
       }
     },
@@ -289,11 +289,11 @@
         "template_outlook": 0,
         "ai_vocab": 8,
         "sentence_shape": 8,
-        "style_residue": 6,
+        "style_residue": 5,
         "filler_hedging": 0
       },
-      "total_hits": 33,
-      "hits_per_1k_tokens": 6.07,
+      "total_hits": 32,
+      "hits_per_1k_tokens": 5.88,
       "top_examples": {
         "inflation": [
           "challenging start to a new decade and a crucial window for repositioning and pursuing high-quality development under the suppor",
@@ -321,8 +321,8 @@
         ],
         "style_residue": [
           "al historical significance for Hong Kong—it represents both a challenging start to a new decade and a crucial window for",
-          "dong-Hong Kong-Macao Greater Bay Area. **Keywords:** Hong Kong economy; Greater Bay Area; Northern Metropolis; IPO market; talent po",
-          "ic growth forecast remains at 2%-3% . **Growth Driver Analysis:** - **External Demand**: Benefiting from strong global demand for AI-related"
+          "ic growth forecast remains at 2%-3% . **Growth Driver Analysis:** - **External Demand**: Benefiting from strong global demand for AI-related",
+          "nomic growth over the next five years. **Key Milestones:** - 2026: Hung Shui Kiu Industrial Estate commences operation; Tuen Ma Line Hung"
         ]
       }
     },

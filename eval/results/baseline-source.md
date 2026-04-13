@@ -8,7 +8,7 @@ The numbers below are heuristic AI-signal counts derived from the skill's Englis
 - Documents: 10
 - Languages: {'zh': 5, 'en': 5}
 - Model families: {'GPT': 2, 'Grok': 2, 'Kimi': 2, 'Mimo': 2, 'Minimax': 2}
-- Top categories: [('sentence_shape', 31), ('scaffolding', 28), ('style_residue', 25), ('inflation', 21), ('dash_drama', 19), ('ai_vocab', 19), ('promotional', 17), ('superficial_analysis', 16), ('negative_parallelism', 7), ('nominalization', 5)]
+- Top categories: [('sentence_shape', 31), ('scaffolding', 28), ('style_residue', 23), ('inflation', 21), ('dash_drama', 19), ('ai_vocab', 19), ('promotional', 17), ('superficial_analysis', 16), ('negative_parallelism', 7), ('nominalization', 5)]
 
 ## Ranking by AI-signal density
 
@@ -16,13 +16,13 @@ The numbers below are heuristic AI-signal counts derived from the skill's Englis
 | --- | --- | --- | --- | ---: | ---: |
 | 1 | grok-en | Grok | en | 16 | 8.05 |
 | 2 | minimax-en | Minimax | en | 49 | 6.62 |
-| 3 | kimi-en | Kimi | en | 33 | 6.07 |
-| 4 | gpt-zh | GPT | zh | 24 | 6.05 |
-| 5 | mimo-en | Mimo | en | 20 | 5.98 |
+| 3 | gpt-zh | GPT | zh | 24 | 6.05 |
+| 4 | mimo-en | Mimo | en | 20 | 5.98 |
+| 5 | kimi-en | Kimi | en | 32 | 5.88 |
 | 6 | gpt-en | GPT | en | 8 | 3.38 |
 | 7 | grok-zh | Grok | zh | 9 | 3.19 |
 | 8 | mimo-zh | Mimo | zh | 11 | 2.07 |
-| 9 | kimi-zh | Kimi | zh | 13 | 1.67 |
+| 9 | kimi-zh | Kimi | zh | 12 | 1.54 |
 | 10 | minimax-zh | Minimax | zh | 14 | 1.43 |
 
 ## Per-document notes
@@ -51,18 +51,6 @@ The numbers below are heuristic AI-signal counts derived from the skill's Englis
   - promotional: d its policy stance toward developing a vibrant virtual assets sector, and the Securities and Futures Commission implemented a
   - superficial_analysis: offered returns tied to the local CPI, underscoring the commitment to maintaining price stability while providing some protection a
 
-### kimi-en
-
-- Path: `eval/AIgenPapers/Kimi Eng.md`
-- Tokens: 5439
-- Total hits: 33
-- Hits per 1k tokens: 6.07
-- Top categories: [('ai_vocab', 8), ('sentence_shape', 8), ('promotional', 6), ('style_residue', 6), ('inflation', 3)]
-- Example matches:
-  - inflation: challenging start to a new decade and a crucial window for repositioning and pursuing high-quality development under the suppor
-  - promotional: and capital inflows. Hong Kong needs to enhance its own competitiveness and reduce excessive dependence on Mainland economic cy
-  - superficial_analysis: to institutional bookbuilding tranches, ensuring price discovery is led by professional institutions ; - Public su
-
 ### gpt-zh
 
 - Path: `eval/AIgenPapers/GPT Chi.md`
@@ -86,6 +74,18 @@ The numbers below are heuristic AI-signal counts derived from the skill's Englis
   - inflation: nd Structural Fine-tuning**. 2023 was a pivotal year for Hong Kong's full return to normalcy. The full resumption of travel wit
   - promotional: Vision" to expand economic capacity and enhance long-term competitiveness. - **Maintaining the Linked Exchange Rate System
   - superficial_analysis: tractiveness to talent and enterprises. Ensuring that the fruits of economic growth benefit citizens across all strata more equi
+
+### kimi-en
+
+- Path: `eval/AIgenPapers/Kimi Eng.md`
+- Tokens: 5439
+- Total hits: 32
+- Hits per 1k tokens: 5.88
+- Top categories: [('ai_vocab', 8), ('sentence_shape', 8), ('promotional', 6), ('style_residue', 5), ('inflation', 3)]
+- Example matches:
+  - inflation: challenging start to a new decade and a crucial window for repositioning and pursuing high-quality development under the suppor
+  - promotional: and capital inflows. Hong Kong needs to enhance its own competitiveness and reduce excessive dependence on Mainland economic cy
+  - superficial_analysis: to institutional bookbuilding tranches, ensuring price discovery is led by professional institutions ; - Public su
 
 ### gpt-en
 
@@ -126,9 +126,9 @@ The numbers below are heuristic AI-signal counts derived from the skill's Englis
 
 - Path: `eval/AIgenPapers/Kimi Chi.md`
 - Tokens: 7797
-- Total hits: 13
-- Hits per 1k tokens: 1.67
-- Top categories: [('style_residue', 5), ('scaffolding', 4), ('dash_drama', 3), ('nominalization', 1)]
+- Total hits: 12
+- Hits per 1k tokens: 1.54
+- Top categories: [('scaffolding', 4), ('style_residue', 4), ('dash_drama', 3), ('nominalization', 1)]
 - Example matches:
   - dash_drama: 政策制定者关注的焦点。2020年至2029年这一时期对香港而言具有特殊的历史意义——这既是一个充满挑战的十年开端，也是香港在国家"十四五"规划支持下重新定位、谋求高质量发展的关键窗口期。 过去五年（2020-2024年），香港经济经历了前所未
   - scaffolding: po-2025/)。这一系列剧烈波动考验着香港经济的抗压能力和复苏韧性。 与此同时，香港特区政府积极推出了一系列稳经济、惠民生的政策措施。2024年2月，政府宣布全面取消实施超过十年的楼市"辣招"（包括针对非永久居民的买家印花税、第二套房的额
