@@ -1,4 +1,4 @@
-# Evaluation Report: codex-gpt-5.4-v2
+# Evaluation Report: codex-gpt-5.4-v4
 
 This report scores the rewritten papers produced by the current evaluation round.
 The numbers below are heuristic AI-signal counts derived from the skill's English and Chinese rule families.
@@ -8,38 +8,28 @@ The numbers below are heuristic AI-signal counts derived from the skill's Englis
 - Documents: 10
 - Languages: {'zh': 5, 'en': 5}
 - Model families: {'GPT': 2, 'Grok': 2, 'Kimi': 2, 'Mimo': 2, 'Minimax': 2}
-- Top categories: [('scaffolding', 8), ('sentence_shape', 7), ('inflation', 6), ('superficial_analysis', 4), ('negative_parallelism', 3), ('officialese', 1), ('nominalization', 1), ('template_outlook', 1), ('filler_hedging', 1), ('dash_drama', 0)]
+- Top categories: [('scaffolding', 8), ('inflation', 6), ('superficial_analysis', 4), ('negative_parallelism', 3), ('sentence_shape', 3), ('officialese', 1), ('nominalization', 1), ('template_outlook', 1), ('filler_hedging', 1), ('dash_drama', 0)]
 
 ## Ranking by AI-signal density
 
 | Rank | Doc | Model | Lang | Hits | Hits/1k tokens |
 | --- | --- | --- | --- | ---: | ---: |
-| 1 | gpt-en | GPT | en | 4 | 1.77 |
-| 2 | grok-en | Grok | en | 3 | 1.15 |
-| 3 | kimi-en | Kimi | en | 5 | 0.97 |
-| 4 | mimo-en | Mimo | en | 3 | 0.87 |
-| 5 | minimax-en | Minimax | en | 4 | 0.7 |
-| 6 | minimax-zh | Minimax | zh | 5 | 0.62 |
-| 7 | gpt-zh | GPT | zh | 2 | 0.53 |
-| 8 | grok-zh | Grok | zh | 2 | 0.47 |
-| 9 | kimi-zh | Kimi | zh | 3 | 0.41 |
-| 10 | mimo-zh | Mimo | zh | 1 | 0.19 |
+| 1 | grok-en | Grok | en | 3 | 1.15 |
+| 2 | kimi-en | Kimi | en | 5 | 0.97 |
+| 3 | mimo-en | Mimo | en | 3 | 0.87 |
+| 4 | minimax-en | Minimax | en | 4 | 0.7 |
+| 5 | minimax-zh | Minimax | zh | 5 | 0.62 |
+| 6 | gpt-zh | GPT | zh | 2 | 0.53 |
+| 7 | grok-zh | Grok | zh | 2 | 0.47 |
+| 8 | kimi-zh | Kimi | zh | 3 | 0.41 |
+| 9 | mimo-zh | Mimo | zh | 1 | 0.19 |
+| 10 | gpt-en | GPT | en | 0 | 0.0 |
 
 ## Per-document notes
 
-### gpt-en
-
-- Path: `eval/outputs/codex-gpt-5.4-v2/gpt-en.md`
-- Tokens: 2265
-- Total hits: 4
-- Hits per 1k tokens: 1.77
-- Top categories: [('sentence_shape', 4)]
-- Example matches:
-  - sentence_shape: ere. ### III. Prospects for 2026–2030 Taken together, official and IMF forecasts point to a moderate-growth outlook. The government
-
 ### grok-en
 
-- Path: `eval/outputs/codex-gpt-5.4-v2/grok-en.md`
+- Path: `eval/outputs/codex-gpt-5.4-v4/grok-en.md`
 - Tokens: 2610
 - Total hits: 3
 - Hits per 1k tokens: 1.15
@@ -50,8 +40,8 @@ The numbers below are heuristic AI-signal counts derived from the skill's Englis
 
 ### kimi-en
 
-- Path: `eval/outputs/codex-gpt-5.4-v2/kimi-en.md`
-- Tokens: 5165
+- Path: `eval/outputs/codex-gpt-5.4-v4/kimi-en.md`
+- Tokens: 5155
 - Total hits: 5
 - Hits per 1k tokens: 0.97
 - Top categories: [('inflation', 2), ('sentence_shape', 2), ('filler_hedging', 1)]
@@ -62,8 +52,8 @@ The numbers below are heuristic AI-signal counts derived from the skill's Englis
 
 ### mimo-en
 
-- Path: `eval/outputs/codex-gpt-5.4-v2/mimo-en.md`
-- Tokens: 3441
+- Path: `eval/outputs/codex-gpt-5.4-v4/mimo-en.md`
+- Tokens: 3437
 - Total hits: 3
 - Hits per 1k tokens: 0.87
 - Top categories: [('inflation', 2), ('sentence_shape', 1)]
@@ -73,8 +63,8 @@ The numbers below are heuristic AI-signal counts derived from the skill's Englis
 
 ### minimax-en
 
-- Path: `eval/outputs/codex-gpt-5.4-v2/minimax-en.md`
-- Tokens: 5754
+- Path: `eval/outputs/codex-gpt-5.4-v4/minimax-en.md`
+- Tokens: 5753
 - Total hits: 4
 - Hits per 1k tokens: 0.7
 - Top categories: [('superficial_analysis', 2), ('inflation', 1), ('template_outlook', 1)]
@@ -85,7 +75,7 @@ The numbers below are heuristic AI-signal counts derived from the skill's Englis
 
 ### minimax-zh
 
-- Path: `eval/outputs/codex-gpt-5.4-v2/minimax-zh.md`
+- Path: `eval/outputs/codex-gpt-5.4-v4/minimax-zh.md`
 - Tokens: 8075
 - Total hits: 5
 - Hits per 1k tokens: 0.62
@@ -96,7 +86,7 @@ The numbers below are heuristic AI-signal counts derived from the skill's Englis
 
 ### gpt-zh
 
-- Path: `eval/outputs/codex-gpt-5.4-v2/gpt-zh.md`
+- Path: `eval/outputs/codex-gpt-5.4-v4/gpt-zh.md`
 - Tokens: 3775
 - Total hits: 2
 - Hits per 1k tokens: 0.53
@@ -106,7 +96,7 @@ The numbers below are heuristic AI-signal counts derived from the skill's Englis
 
 ### grok-zh
 
-- Path: `eval/outputs/codex-gpt-5.4-v2/grok-zh.md`
+- Path: `eval/outputs/codex-gpt-5.4-v4/grok-zh.md`
 - Tokens: 4247
 - Total hits: 2
 - Hits per 1k tokens: 0.47
@@ -116,7 +106,7 @@ The numbers below are heuristic AI-signal counts derived from the skill's Englis
 
 ### kimi-zh
 
-- Path: `eval/outputs/codex-gpt-5.4-v2/kimi-zh.md`
+- Path: `eval/outputs/codex-gpt-5.4-v4/kimi-zh.md`
 - Tokens: 7326
 - Total hits: 3
 - Hits per 1k tokens: 0.41
@@ -127,11 +117,19 @@ The numbers below are heuristic AI-signal counts derived from the skill's Englis
 
 ### mimo-zh
 
-- Path: `eval/outputs/codex-gpt-5.4-v2/mimo-zh.md`
+- Path: `eval/outputs/codex-gpt-5.4-v4/mimo-zh.md`
 - Tokens: 5263
 - Total hits: 1
 - Hits per 1k tokens: 0.19
 - Top categories: [('negative_parallelism', 1)]
 - Example matches:
   - negative_parallelism: 预期。 人才政策的重点不应停留在引进数量，更需要处理留才和用才问题。国际竞争力不仅来自薪酬，还取决于科研条件、制度便利、教育医疗配套和整体生活质量。若这些条件无法同步改善，单纯依赖输入式引才难以形成长期积累。 大湾区内部的协同应更多落在规则衔接和制度便
+
+### gpt-en
+
+- Path: `eval/outputs/codex-gpt-5.4-v4/gpt-en.md`
+- Tokens: 2264
+- Total hits: 0
+- Hits per 1k tokens: 0.0
+- Top categories: none
 

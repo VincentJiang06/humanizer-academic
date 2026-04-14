@@ -157,8 +157,11 @@ EN_RULES: dict[str, list[str]] = {
         r"\bnot just\b",
         r"\bnot merely\b",
         r"\bboasts?\b",
-        r"\bfeatures?\b",
-        r"\bfrom .{1,40} to .{1,40}\b",
+        r"\btaken together\b",
+        r"\bthe first (major )?(growth )?pillar\b",
+        r"\bthe second pillar\b",
+        r"\bthe third pillar\b",
+        r"\bthis paper (analyzes|reviews|examines)\b",
     ],
     "style_residue": [
         r"—",

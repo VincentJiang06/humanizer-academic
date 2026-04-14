@@ -6,6 +6,7 @@ Run a full evaluation round: rewrite -> score rewritten outputs -> compare to ba
 from __future__ import annotations
 
 import argparse
+import json
 import subprocess
 import sys
 from pathlib import Path
@@ -25,6 +26,7 @@ def main() -> None:
     parser.add_argument("--timeout", type=int, default=360)
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--ids", nargs="*")
+    parser.add_argument("--polish-english", action="store_true")
     args = parser.parse_args()
 
     root = Path.cwd()
@@ -49,6 +51,23 @@ def main() -> None:
     if args.ids:
         rewrite_cmd.extend(["--ids", *args.ids])
     run(rewrite_cmd, root)
+
+    if args.polish_english:
+        manifest = json.loads((root / output_dir / "manifest.json").read_text())
+        english_files = [
+            str(root / item["path"])
+            for item in manifest
+            if item["language"] == "en"
+        ]
+        if english_files:
+            run(
+                [
+                    "python3",
+                    "humanizer-academic/scripts/polish_english.py",
+                    *english_files,
+                ],
+                root,
+            )
 
     run(
         [

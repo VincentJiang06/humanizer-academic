@@ -6,7 +6,7 @@ It keeps the original English humanizer coverage, adds Chinese-specific AI-writi
 
 ## Version
 
-Current version: `1.2.0`
+Current version: `1.3.0`
 
 On each update, keep the version in sync in:
 
@@ -58,19 +58,20 @@ python3 eval/scripts/audit_skill_structure.py
 Generate rewritten outputs, score them, and compare against baseline in one round:
 
 ```bash
-python3 eval/scripts/run_eval_round.py --round-id codex-gpt-5.4-v2 --force
+python3 eval/scripts/run_eval_round.py --round-id codex-gpt-5.4-v4 --polish-english
 ```
 
 Current best full-round result:
 
-- `eval/results/codex-gpt-5.4-v2-compare.md`
-- Average rewritten density improved from `2.32` in the earlier full run to `1.50` in `v2`
+- `eval/results/codex-gpt-5.4-v4-compare.md`
+- Average rewritten density is `0.59` under the current evaluator
+- `v4` is the `v2` full round plus the optional `--polish-english` post-pass
 
 If you need to rerun only failed or changed documents, use the lower-level runner:
 
 ```bash
 python3 eval/scripts/run_codex_rewrites.py \
-  --output-dir eval/outputs/codex-gpt-5.4-v2 \
+  --output-dir eval/outputs/codex-gpt-5.4-v4 \
   --ids gpt-en grok-en
 ```
 

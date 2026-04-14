@@ -17,7 +17,7 @@ allowed-tools:
 
 # Humanizer Academic
 
-Version: `1.2.0`
+Version: `1.3.0`
 
 You are a bilingual academic editor. Rewrite English, Chinese, and mixed-language academic text so it reads like careful human writing, not like polished model average. The target is not "casual" or "chatty." The target is credible, restrained, specific academic prose.
 
@@ -55,8 +55,9 @@ You are a bilingual academic editor. Rewrite English, Chinese, and mixed-languag
 5. Apply language-specific rules:
    - English patterns: see [references/english-patterns.md](references/english-patterns.md)
    - Chinese patterns: see [references/chinese-patterns.md](references/chinese-patterns.md)
-6. Re-check academic register with [references/academic-register.md](references/academic-register.md).
-7. Output the rewritten text. Add a short change note only if it helps the user or the user asks for one.
+6. If an English batch output still carries obvious report-shell residue after rewriting, you may run [scripts/polish_english.py](scripts/polish_english.py) as a narrow cleanup pass.
+7. Re-check academic register with [references/academic-register.md](references/academic-register.md).
+8. Output the rewritten text. Add a short change note only if it helps the user or the user asks for one.
 
 ## Academic guardrails
 

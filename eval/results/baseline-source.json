@@ -14,10 +14,6 @@
     },
     "top_categories": [
       [
-        "sentence_shape",
-        31
-      ],
-      [
         "scaffolding",
         28
       ],
@@ -52,33 +48,37 @@
       [
         "nominalization",
         5
+      ],
+      [
+        "sentence_shape",
+        5
       ]
     ],
     "highest_density_docs": [
-      {
-        "doc_id": "grok-en",
-        "hits_per_1k_tokens": 8.05,
-        "total_hits": 16
-      },
-      {
-        "doc_id": "minimax-en",
-        "hits_per_1k_tokens": 6.62,
-        "total_hits": 49
-      },
       {
         "doc_id": "gpt-zh",
         "hits_per_1k_tokens": 6.05,
         "total_hits": 24
       },
       {
-        "doc_id": "mimo-en",
-        "hits_per_1k_tokens": 5.98,
-        "total_hits": 20
+        "doc_id": "grok-en",
+        "hits_per_1k_tokens": 6.04,
+        "total_hits": 12
+      },
+      {
+        "doc_id": "minimax-en",
+        "hits_per_1k_tokens": 5.67,
+        "total_hits": 42
       },
       {
         "doc_id": "kimi-en",
-        "hits_per_1k_tokens": 5.88,
-        "total_hits": 32
+        "hits_per_1k_tokens": 4.41,
+        "total_hits": 24
+      },
+      {
+        "doc_id": "mimo-en",
+        "hits_per_1k_tokens": 3.89,
+        "total_hits": 13
       }
     ]
   },
@@ -149,9 +149,9 @@
           "xpenditure surged by 7.4%, indicating a powerful rebound in household activity and service demand. Full-year visitor arrivals re"
         ],
         "sentence_shape": [
-          "remained uneven, and the economy moved from border restrictions and tourism collapse to renewed growth in finance, services exports, inbound",
-          "spending quality. Visitor arrivals rose from about 91,000 in 2021 to 600,000 in 2022, 34 million in 2023, nearly 45 million in 2024, and 49.",
-          "y population aged 65 and over will rise from 1.45 million in 2021 to 2.74 million in 2046, while the labour-force participation rate excludi"
+          "was. ### III. Prospects for 2026–2030 Taken together, official and IMF forecasts point to a moderate-growth future. The government e",
+          "nomy undergoing structural transition. The first major growth pillar for the next five years will remain international finance—but in a more",
+          "roducts, and financial infrastructure. The second pillar is innovation and industrial upgrading linked to the Northern Metropolis. The 2"
         ],
         "style_residue": [
           "years will remain international finance—but in a more diversified form. With bank deposits above HK$19 trillion, substan",
@@ -203,12 +203,12 @@
         "vague_attribution": 0,
         "template_outlook": 0,
         "ai_vocab": 1,
-        "sentence_shape": 4,
+        "sentence_shape": 0,
         "style_residue": 3,
         "filler_hedging": 0
       },
-      "total_hits": 16,
-      "hits_per_1k_tokens": 8.05,
+      "total_hits": 12,
+      "hits_per_1k_tokens": 6.04,
       "top_examples": {
         "inflation": [
           "hancements, and GBA initiatives, played pivotal roles in stabilizing the business environment and fostering cross-border synerg",
@@ -222,11 +222,6 @@
         ],
         "ai_vocab": [
           "tabilizing the business environment and fostering cross-border synergies. Looking ahead to 2026–2030, the economy is projected"
-        ],
-        "sentence_shape": [
-          "of the territory’s economic performance from 2021 to 2025, a period marked by post-COVID-19 recovery, geopolitical tensions, and accelerated",
-          "estic demand recovery. Nominal GDP rose from approximately US$369 billion in 2021 to US$427 billion in 2025. Unemployment declined from pand",
-          "billion in 2025. Unemployment declined from pandemic highs to 3.8% by early 2026, with underemployment at low levels. Inflation remained ben"
         ],
         "style_residue": [
           "strongly, recording 3.5% real GDP growth—the highest since 2021 and the third year of consecutive expansion. This resilie",
@@ -288,12 +283,12 @@
         "vague_attribution": 0,
         "template_outlook": 0,
         "ai_vocab": 8,
-        "sentence_shape": 8,
+        "sentence_shape": 0,
         "style_residue": 5,
         "filler_hedging": 0
       },
-      "total_hits": 32,
-      "hits_per_1k_tokens": 5.88,
+      "total_hits": 24,
+      "hits_per_1k_tokens": 4.41,
       "top_examples": {
         "inflation": [
           "challenging start to a new decade and a crucial window for repositioning and pursuing high-quality development under the suppor",
@@ -313,11 +308,6 @@
           "and capital inflows. Hong Kong needs to enhance its own competitiveness and reduce excessive dependence on Mainland economic cy",
           "one-hour living circle\" construction to enhance convenience for residents' cross-border living. **4.4.2 Optimize Industri",
           "**4.4.3 Improve Talent Policy and Enhance City Attractiveness** - Optimize TTPS renewal conditions, including flexible e"
-        ],
-        "sentence_shape": [
-          "policies over the next five years will feature: - **Precision Recruitment**: Continuously updating the Talent List, focusing",
-          "and policy-making attention. The period from 2020 to 2029 holds special historical significance for Hong Kong—it represents both a challengi",
-          "4) #### 2.1 Macroeconomic Performance: From Recession to Recovery Hong Kong's economy experienced a distinct V-shaped reversal over the past"
         ],
         "style_residue": [
           "al historical significance for Hong Kong—it represents both a challenging start to a new decade and a crucial window for",
@@ -373,12 +363,12 @@
         "vague_attribution": 0,
         "template_outlook": 0,
         "ai_vocab": 2,
-        "sentence_shape": 8,
+        "sentence_shape": 1,
         "style_residue": 0,
         "filler_hedging": 0
       },
-      "total_hits": 20,
-      "hits_per_1k_tokens": 5.98,
+      "total_hits": 13,
+      "hits_per_1k_tokens": 3.89,
       "top_examples": {
         "inflation": [
           "nd Structural Fine-tuning**. 2023 was a pivotal year for Hong Kong's full return to normalcy. The full resumption of travel wit",
@@ -398,9 +388,7 @@
           ", and society, building a smart city to enhance overall competitiveness. --- ## Conclusion Reviewing 2021-2025, Hong Ko"
         ],
         "sentence_shape": [
-          "on and industrial introduction. It will not just be a new residential town but will become Hong Kong's \"bridgehead\" for integrat",
-          "g Special Administrative Region (HKSAR) from 2021 to 2025, providing an in-depth analysis of its growth drivers, structural challenges, and ",
-          "egic directions for Hong Kong's economy from 2026 to 2030, based on existing plans and macro trends. The study concludes that over the next "
+          "on and industrial introduction. It will not just be a new residential town but will become Hong Kong's \"bridgehead\" for integrat"
         ]
       }
     },
@@ -454,12 +442,12 @@
         "vague_attribution": 0,
         "template_outlook": 2,
         "ai_vocab": 8,
-        "sentence_shape": 7,
+        "sentence_shape": 0,
         "style_residue": 8,
         "filler_hedging": 0
       },
-      "total_hits": 49,
-      "hits_per_1k_tokens": 6.62,
+      "total_hits": 42,
+      "hits_per_1k_tokens": 5.67,
       "top_examples": {
         "inflation": [
           "global economic landscape, serving as a pivotal gateway between Mainland China and international markets while maintaining its",
@@ -484,11 +472,6 @@
           "al Reserve policy, which may not always align with domestic economic needs. Structural challenges include an aging population tha",
           "\" reflects the ambition to maintain and enhance Hong Kong's unique role in regional and global economic networks. This approach",
           "economic partnership arrangements could enhance Hong Kong's trade connectivity. While Hong Kong's participation in major multil"
-        ],
-        "sentence_shape": [
-          "period of challenges and transformation from 2020 to 2024, marked by the dual shocks of the COVID-19 pandemic and significant political rest",
-          "ystems\" principle. The five-year period from 2020 to 2024 represented one of the most consequential eras in the territory's modern economic ",
-          "particular resilience, driven by demand from mainland Chinese buyers seeking to park wealth in stable assets and take advantage of more attr"
         ],
         "style_residue": [
           "ion of approximately 4.8 percent in 2020—the sharpest decline in decades—the territory staged a notable recovery, achievi",

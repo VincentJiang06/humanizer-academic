@@ -18,6 +18,7 @@ This evaluation set contains ten AI-generated papers on one shared topic:
 - `scripts/run_codex_rewrites.py`: batch rewrite runner using `codex exec`
 - `scripts/run_eval_round.py`: one-command rewrite + score + compare runner
 - `scripts/compare_eval_results.py`: before/after comparison over heuristic evaluation outputs
+- `../humanizer-academic/scripts/polish_english.py`: narrow English cleanup pass for residual report-shell phrasing
 - `outputs/`: generated rewritten papers and manifests
 - `results/`: generated baseline and audit reports
 
@@ -53,5 +54,6 @@ Score each rewrite on a 1-5 scale:
 
 ## Current best round
 
-- Best current full-round output: `results/codex-gpt-5.4-v2-compare.md`
-- Average rewritten density: `1.50`
+- Best current full-round output: `results/codex-gpt-5.4-v4-compare.md`
+- Average rewritten density: `0.59`
+- `v4` is derived from the `v2` output set plus `polish_english.py`

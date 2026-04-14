@@ -18,10 +18,6 @@
         8
       ],
       [
-        "sentence_shape",
-        7
-      ],
-      [
         "inflation",
         6
       ],
@@ -31,6 +27,10 @@
       ],
       [
         "negative_parallelism",
+        3
+      ],
+      [
+        "sentence_shape",
         3
       ],
       [
@@ -56,11 +56,6 @@
     ],
     "highest_density_docs": [
       {
-        "doc_id": "gpt-en",
-        "hits_per_1k_tokens": 1.77,
-        "total_hits": 4
-      },
-      {
         "doc_id": "grok-en",
         "hits_per_1k_tokens": 1.15,
         "total_hits": 3
@@ -79,6 +74,11 @@
         "doc_id": "minimax-en",
         "hits_per_1k_tokens": 0.7,
         "total_hits": 4
+      },
+      {
+        "doc_id": "minimax-zh",
+        "hits_per_1k_tokens": 0.62,
+        "total_hits": 5
       }
     ]
   },
@@ -87,7 +87,7 @@
       "doc_id": "gpt-zh",
       "model_family": "GPT",
       "language": "zh",
-      "path": "eval/outputs/codex-gpt-5.4-v2/gpt-zh.md",
+      "path": "eval/outputs/codex-gpt-5.4-v4/gpt-zh.md",
       "token_count": 3775,
       "category_counts": {
         "dash_drama": 0,
@@ -113,8 +113,8 @@
       "doc_id": "gpt-en",
       "model_family": "GPT",
       "language": "en",
-      "path": "eval/outputs/codex-gpt-5.4-v2/gpt-en.md",
-      "token_count": 2265,
+      "path": "eval/outputs/codex-gpt-5.4-v4/gpt-en.md",
+      "token_count": 2264,
       "category_counts": {
         "inflation": 0,
         "promotional": 0,
@@ -122,25 +122,19 @@
         "vague_attribution": 0,
         "template_outlook": 0,
         "ai_vocab": 0,
-        "sentence_shape": 4,
+        "sentence_shape": 0,
         "style_residue": 0,
         "filler_hedging": 0
       },
-      "total_hits": 4,
-      "hits_per_1k_tokens": 1.77,
-      "top_examples": {
-        "sentence_shape": [
-          "ere. ### III. Prospects for 2026–2030 Taken together, official and IMF forecasts point to a moderate-growth outlook. The government",
-          "economy undergoing structural change. The first major growth pillar over the next five years is likely to remain international finance, thou",
-          "roducts, and financial infrastructure. The second pillar is innovation and industrial upgrading linked to the Northern Metropolis. The 2"
-        ]
-      }
+      "total_hits": 0,
+      "hits_per_1k_tokens": 0.0,
+      "top_examples": {}
     },
     {
       "doc_id": "grok-zh",
       "model_family": "Grok",
       "language": "zh",
-      "path": "eval/outputs/codex-gpt-5.4-v2/grok-zh.md",
+      "path": "eval/outputs/codex-gpt-5.4-v4/grok-zh.md",
       "token_count": 4247,
       "category_counts": {
         "dash_drama": 0,
@@ -166,7 +160,7 @@
       "doc_id": "grok-en",
       "model_family": "Grok",
       "language": "en",
-      "path": "eval/outputs/codex-gpt-5.4-v2/grok-en.md",
+      "path": "eval/outputs/codex-gpt-5.4-v4/grok-en.md",
       "token_count": 2610,
       "category_counts": {
         "inflation": 1,
@@ -195,7 +189,7 @@
       "doc_id": "kimi-zh",
       "model_family": "Kimi",
       "language": "zh",
-      "path": "eval/outputs/codex-gpt-5.4-v2/kimi-zh.md",
+      "path": "eval/outputs/codex-gpt-5.4-v4/kimi-zh.md",
       "token_count": 7326,
       "category_counts": {
         "dash_drama": 0,
@@ -224,8 +218,8 @@
       "doc_id": "kimi-en",
       "model_family": "Kimi",
       "language": "en",
-      "path": "eval/outputs/codex-gpt-5.4-v2/kimi-en.md",
-      "token_count": 5165,
+      "path": "eval/outputs/codex-gpt-5.4-v4/kimi-en.md",
+      "token_count": 5155,
       "category_counts": {
         "inflation": 2,
         "promotional": 0,
@@ -257,7 +251,7 @@
       "doc_id": "mimo-zh",
       "model_family": "Mimo",
       "language": "zh",
-      "path": "eval/outputs/codex-gpt-5.4-v2/mimo-zh.md",
+      "path": "eval/outputs/codex-gpt-5.4-v4/mimo-zh.md",
       "token_count": 5263,
       "category_counts": {
         "dash_drama": 0,
@@ -282,8 +276,8 @@
       "doc_id": "mimo-en",
       "model_family": "Mimo",
       "language": "en",
-      "path": "eval/outputs/codex-gpt-5.4-v2/mimo-en.md",
-      "token_count": 3441,
+      "path": "eval/outputs/codex-gpt-5.4-v4/mimo-en.md",
+      "token_count": 3437,
       "category_counts": {
         "inflation": 2,
         "promotional": 0,
@@ -311,7 +305,7 @@
       "doc_id": "minimax-zh",
       "model_family": "Minimax",
       "language": "zh",
-      "path": "eval/outputs/codex-gpt-5.4-v2/minimax-zh.md",
+      "path": "eval/outputs/codex-gpt-5.4-v4/minimax-zh.md",
       "token_count": 8075,
       "category_counts": {
         "dash_drama": 0,
@@ -341,8 +335,8 @@
       "doc_id": "minimax-en",
       "model_family": "Minimax",
       "language": "en",
-      "path": "eval/outputs/codex-gpt-5.4-v2/minimax-en.md",
-      "token_count": 5754,
+      "path": "eval/outputs/codex-gpt-5.4-v4/minimax-en.md",
+      "token_count": 5753,
       "category_counts": {
         "inflation": 1,
         "promotional": 0,

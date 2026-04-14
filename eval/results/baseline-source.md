@@ -8,17 +8,17 @@ The numbers below are heuristic AI-signal counts derived from the skill's Englis
 - Documents: 10
 - Languages: {'zh': 5, 'en': 5}
 - Model families: {'GPT': 2, 'Grok': 2, 'Kimi': 2, 'Mimo': 2, 'Minimax': 2}
-- Top categories: [('sentence_shape', 31), ('scaffolding', 28), ('style_residue', 23), ('inflation', 21), ('dash_drama', 19), ('ai_vocab', 19), ('promotional', 17), ('superficial_analysis', 16), ('negative_parallelism', 7), ('nominalization', 5)]
+- Top categories: [('scaffolding', 28), ('style_residue', 23), ('inflation', 21), ('dash_drama', 19), ('ai_vocab', 19), ('promotional', 17), ('superficial_analysis', 16), ('negative_parallelism', 7), ('nominalization', 5), ('sentence_shape', 5)]
 
 ## Ranking by AI-signal density
 
 | Rank | Doc | Model | Lang | Hits | Hits/1k tokens |
 | --- | --- | --- | --- | ---: | ---: |
-| 1 | grok-en | Grok | en | 16 | 8.05 |
-| 2 | minimax-en | Minimax | en | 49 | 6.62 |
-| 3 | gpt-zh | GPT | zh | 24 | 6.05 |
-| 4 | mimo-en | Mimo | en | 20 | 5.98 |
-| 5 | kimi-en | Kimi | en | 32 | 5.88 |
+| 1 | gpt-zh | GPT | zh | 24 | 6.05 |
+| 2 | grok-en | Grok | en | 12 | 6.04 |
+| 3 | minimax-en | Minimax | en | 42 | 5.67 |
+| 4 | kimi-en | Kimi | en | 24 | 4.41 |
+| 5 | mimo-en | Mimo | en | 13 | 3.89 |
 | 6 | gpt-en | GPT | en | 8 | 3.38 |
 | 7 | grok-zh | Grok | zh | 9 | 3.19 |
 | 8 | mimo-zh | Mimo | zh | 11 | 2.07 |
@@ -26,30 +26,6 @@ The numbers below are heuristic AI-signal counts derived from the skill's Englis
 | 10 | minimax-zh | Minimax | zh | 14 | 1.43 |
 
 ## Per-document notes
-
-### grok-en
-
-- Path: `eval/AIgenPapers/Grok Eng.md`
-- Tokens: 1988
-- Total hits: 16
-- Hits per 1k tokens: 8.05
-- Top categories: [('inflation', 4), ('superficial_analysis', 4), ('sentence_shape', 4), ('style_residue', 3), ('ai_vocab', 1)]
-- Example matches:
-  - inflation: hancements, and GBA initiatives, played pivotal roles in stabilizing the business environment and fostering cross-border synerg
-  - superficial_analysis: es. Productivity lagged regional peers, highlighting needs for I&T and human capital upgrades. **4. Prospects for the Next Five Y
-  - ai_vocab: tabilizing the business environment and fostering cross-border synergies. Looking ahead to 2026–2030, the economy is projected
-
-### minimax-en
-
-- Path: `eval/AIgenPapers/Minimax Eng.md`
-- Tokens: 7405
-- Total hits: 49
-- Hits per 1k tokens: 6.62
-- Top categories: [('inflation', 8), ('promotional', 8), ('superficial_analysis', 8), ('ai_vocab', 8), ('style_residue', 8)]
-- Example matches:
-  - inflation: global economic landscape, serving as a pivotal gateway between Mainland China and international markets while maintaining its
-  - promotional: d its policy stance toward developing a vibrant virtual assets sector, and the Securities and Futures Commission implemented a
-  - superficial_analysis: offered returns tied to the local CPI, underscoring the commitment to maintaining price stability while providing some protection a
 
 ### gpt-zh
 
@@ -63,29 +39,53 @@ The numbers below are heuristic AI-signal counts derived from the skill's Englis
   - negative_parallelism: 摘要 如果把 2021 年到 2025 年视为一个完整周期，香港经济的关键词并不是单纯的“疫后复苏”，而是“在连续冲击中重组增长模式”。这五年里，香港先经历了 2021 年由外贸和政策支持带动的强劲反弹，随后在 2022 年因疫情反复与外部金融收紧再度收缩；2023
   - scaffolding: 撑，内需则显得偏弱；到 2025 年，金融市场、科技相关服务、访港旅游和货物出口同时改善，经济增速回升到 3.5%。但与此同时，商业地产疲弱、人口老龄化、劳动力供给趋紧、传统物流竞争力受压，以及财政对土地与资产市场收入的依赖下降，都说明香港已很
 
-### mimo-en
+### grok-en
 
-- Path: `eval/AIgenPapers/Mimo Eng.md`
-- Tokens: 3346
-- Total hits: 20
-- Hits per 1k tokens: 5.98
-- Top categories: [('sentence_shape', 8), ('inflation', 6), ('promotional', 2), ('superficial_analysis', 2), ('ai_vocab', 2)]
+- Path: `eval/AIgenPapers/Grok Eng.md`
+- Tokens: 1988
+- Total hits: 12
+- Hits per 1k tokens: 6.04
+- Top categories: [('inflation', 4), ('superficial_analysis', 4), ('style_residue', 3), ('ai_vocab', 1)]
 - Example matches:
-  - inflation: nd Structural Fine-tuning**. 2023 was a pivotal year for Hong Kong's full return to normalcy. The full resumption of travel wit
-  - promotional: Vision" to expand economic capacity and enhance long-term competitiveness. - **Maintaining the Linked Exchange Rate System
-  - superficial_analysis: tractiveness to talent and enterprises. Ensuring that the fruits of economic growth benefit citizens across all strata more equi
+  - inflation: hancements, and GBA initiatives, played pivotal roles in stabilizing the business environment and fostering cross-border synerg
+  - superficial_analysis: es. Productivity lagged regional peers, highlighting needs for I&T and human capital upgrades. **4. Prospects for the Next Five Y
+  - ai_vocab: tabilizing the business environment and fostering cross-border synergies. Looking ahead to 2026–2030, the economy is projected
+
+### minimax-en
+
+- Path: `eval/AIgenPapers/Minimax Eng.md`
+- Tokens: 7405
+- Total hits: 42
+- Hits per 1k tokens: 5.67
+- Top categories: [('inflation', 8), ('promotional', 8), ('superficial_analysis', 8), ('ai_vocab', 8), ('style_residue', 8)]
+- Example matches:
+  - inflation: global economic landscape, serving as a pivotal gateway between Mainland China and international markets while maintaining its
+  - promotional: d its policy stance toward developing a vibrant virtual assets sector, and the Securities and Futures Commission implemented a
+  - superficial_analysis: offered returns tied to the local CPI, underscoring the commitment to maintaining price stability while providing some protection a
 
 ### kimi-en
 
 - Path: `eval/AIgenPapers/Kimi Eng.md`
 - Tokens: 5439
-- Total hits: 32
-- Hits per 1k tokens: 5.88
-- Top categories: [('ai_vocab', 8), ('sentence_shape', 8), ('promotional', 6), ('style_residue', 5), ('inflation', 3)]
+- Total hits: 24
+- Hits per 1k tokens: 4.41
+- Top categories: [('ai_vocab', 8), ('promotional', 6), ('style_residue', 5), ('inflation', 3), ('superficial_analysis', 2)]
 - Example matches:
   - inflation: challenging start to a new decade and a crucial window for repositioning and pursuing high-quality development under the suppor
   - promotional: and capital inflows. Hong Kong needs to enhance its own competitiveness and reduce excessive dependence on Mainland economic cy
   - superficial_analysis: to institutional bookbuilding tranches, ensuring price discovery is led by professional institutions ; - Public su
+
+### mimo-en
+
+- Path: `eval/AIgenPapers/Mimo Eng.md`
+- Tokens: 3346
+- Total hits: 13
+- Hits per 1k tokens: 3.89
+- Top categories: [('inflation', 6), ('promotional', 2), ('superficial_analysis', 2), ('ai_vocab', 2), ('sentence_shape', 1)]
+- Example matches:
+  - inflation: nd Structural Fine-tuning**. 2023 was a pivotal year for Hong Kong's full return to normalcy. The full resumption of travel wit
+  - promotional: Vision" to expand economic capacity and enhance long-term competitiveness. - **Maintaining the Linked Exchange Rate System
+  - superficial_analysis: tractiveness to talent and enterprises. Ensuring that the fruits of economic growth benefit citizens across all strata more equi
 
 ### gpt-en
 
@@ -96,7 +96,7 @@ The numbers below are heuristic AI-signal counts derived from the skill's Englis
 - Top categories: [('sentence_shape', 4), ('style_residue', 3), ('promotional', 1)]
 - Example matches:
   - promotional: xpenditure surged by 7.4%, indicating a powerful rebound in household activity and service demand. Full-year visitor arrivals re
-  - sentence_shape: remained uneven, and the economy moved from border restrictions and tourism collapse to renewed growth in finance, services exports, inbound
+  - sentence_shape: was. ### III. Prospects for 2026–2030 Taken together, official and IMF forecasts point to a moderate-growth future. The government e
   - style_residue: years will remain international finance—but in a more diversified form. With bank deposits above HK$19 trillion, substan
 
 ### grok-zh
