@@ -90,13 +90,27 @@ Watch for:
 
 - em-dash overuse
 - bolded inline headers in bullet lists
+- report-shell headings such as "Research Background and Significance" or "Growth Driver Analysis"
 - Title Case headings where sentence case fits better
 - emojis
 - curly quotes when the target style expects straight quotes
 
 Default fix: normalize formatting to the target publication style.
 
-## 9. Chat residue and filler
+## 9. Report boilerplate and meta-writing
+
+Watch for:
+
+- this paper examines
+- this report analyzes
+- the following section discusses
+- background and significance
+- main findings
+- policy implications
+
+Default fix: if the phrase merely announces structure, cut it and move straight to the claim, method, or evidence.
+
+## 10. Chat residue and filler
 
 Watch for:
 
@@ -109,6 +123,6 @@ Watch for:
 
 Default fix: delete assistant framing and compress filler.
 
-## 10. Academic note
+## 11. Academic note
 
 Keep legitimate scholarly hedging such as may, appears, suggests, likely, or consistent with when the evidence warrants it. Remove only stacked or empty hedging such as "could potentially possibly."

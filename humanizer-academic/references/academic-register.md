@@ -25,6 +25,7 @@ This skill is intentionally stricter than a general "humanizer." The goal is pub
 - sloganized contrast -> direct claim
 - mechanical paragraph frame -> tighter logic
 - stacked hedging -> calibrated hedging
+- bold lead-in list or report shell -> plain prose unless the list carries real analytical work
 
 ## Section-specific guidance
 
@@ -49,11 +50,17 @@ This skill is intentionally stricter than a general "humanizer." The goal is pub
 
 - Make causal logic explicit.
 - Prefer one precise inference over multiple padded paraphrases.
+- Do not announce the analysis before doing it.
 
 ### Conclusion
 
 - End with implication, limitation, next step, or forecast that is actually grounded.
 - Avoid empty uplift.
+
+### Reports and policy papers
+
+- Keep section structure if it helps navigation, but avoid turning each subsection into a template heading plus bullet list.
+- Prefer plain paragraph openings over management-report labels.
 
 ## What not to add
 

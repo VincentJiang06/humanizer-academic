@@ -291,13 +291,18 @@ def summarize(results: list[DocumentResult]) -> dict[str, object]:
     }
 
 
-def write_markdown(results: list[DocumentResult], out_path: Path) -> None:
+def write_markdown(
+    results: list[DocumentResult],
+    out_path: Path,
+    *,
+    title: str,
+    intro: list[str],
+) -> None:
     summary = summarize(results)
     lines: list[str] = []
-    lines.append("# Baseline Evaluation Report")
+    lines.append(f"# {title}")
     lines.append("")
-    lines.append("This report scores the source papers before any rewriting.")
-    lines.append("The numbers below are heuristic AI-signal counts derived from the skill's English and Chinese rule families.")
+    lines.extend(intro)
     lines.append("")
     lines.append("## Summary")
     lines.append("")
@@ -345,6 +350,13 @@ def main() -> None:
     parser.add_argument("--manifest", default="eval/dataset_manifest.json")
     parser.add_argument("--json-out", default="eval/results/baseline-source.json")
     parser.add_argument("--md-out", default="eval/results/baseline-source.md")
+    parser.add_argument("--title", default="Baseline Evaluation Report")
+    parser.add_argument(
+        "--intro-mode",
+        choices=["baseline", "rewritten"],
+        default="baseline",
+        help="Controls the explanatory text at the top of the markdown report.",
+    )
     args = parser.parse_args()
 
     root = Path.cwd()
@@ -355,7 +367,22 @@ def main() -> None:
 
     results = [evaluate_document(item, root) for item in items]
     write_json(results, root / args.json_out)
-    write_markdown(results, root / args.md_out)
+    intro_map = {
+        "baseline": [
+            "This report scores the source papers before any rewriting.",
+            "The numbers below are heuristic AI-signal counts derived from the skill's English and Chinese rule families.",
+        ],
+        "rewritten": [
+            "This report scores the rewritten papers produced by the current evaluation round.",
+            "The numbers below are heuristic AI-signal counts derived from the skill's English and Chinese rule families.",
+        ],
+    }
+    write_markdown(
+        results,
+        root / args.md_out,
+        title=args.title,
+        intro=intro_map[args.intro_mode],
+    )
     print(f"Wrote {args.json_out}")
     print(f"Wrote {args.md_out}")
 

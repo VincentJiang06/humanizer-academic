@@ -1,0 +1,117 @@
+{
+  "documents_compared": 10,
+  "average_source_density": 4.42,
+  "average_rewritten_density": 1.5,
+  "comparisons": [
+    {
+      "doc_id": "gpt-zh",
+      "language": "zh",
+      "model_family": "GPT",
+      "source_hits": 24,
+      "rewritten_hits": 2,
+      "source_density": 6.05,
+      "rewritten_density": 0.53,
+      "density_delta": -5.52,
+      "hit_delta": -22
+    },
+    {
+      "doc_id": "minimax-en",
+      "language": "en",
+      "model_family": "Minimax",
+      "source_hits": 49,
+      "rewritten_hits": 11,
+      "source_density": 6.62,
+      "rewritten_density": 1.91,
+      "density_delta": -4.71,
+      "hit_delta": -38
+    },
+    {
+      "doc_id": "grok-en",
+      "language": "en",
+      "model_family": "Grok",
+      "source_hits": 16,
+      "rewritten_hits": 11,
+      "source_density": 8.05,
+      "rewritten_density": 4.21,
+      "density_delta": -3.84,
+      "hit_delta": -5
+    },
+    {
+      "doc_id": "kimi-en",
+      "language": "en",
+      "model_family": "Kimi",
+      "source_hits": 32,
+      "rewritten_hits": 11,
+      "source_density": 5.88,
+      "rewritten_density": 2.13,
+      "density_delta": -3.75,
+      "hit_delta": -21
+    },
+    {
+      "doc_id": "mimo-en",
+      "language": "en",
+      "model_family": "Mimo",
+      "source_hits": 20,
+      "rewritten_hits": 8,
+      "source_density": 5.98,
+      "rewritten_density": 2.32,
+      "density_delta": -3.66,
+      "hit_delta": -12
+    },
+    {
+      "doc_id": "grok-zh",
+      "language": "zh",
+      "model_family": "Grok",
+      "source_hits": 9,
+      "rewritten_hits": 2,
+      "source_density": 3.19,
+      "rewritten_density": 0.47,
+      "density_delta": -2.72,
+      "hit_delta": -7
+    },
+    {
+      "doc_id": "mimo-zh",
+      "language": "zh",
+      "model_family": "Mimo",
+      "source_hits": 11,
+      "rewritten_hits": 1,
+      "source_density": 2.07,
+      "rewritten_density": 0.19,
+      "density_delta": -1.88,
+      "hit_delta": -10
+    },
+    {
+      "doc_id": "gpt-en",
+      "language": "en",
+      "model_family": "GPT",
+      "source_hits": 8,
+      "rewritten_hits": 5,
+      "source_density": 3.38,
+      "rewritten_density": 2.21,
+      "density_delta": -1.17,
+      "hit_delta": -3
+    },
+    {
+      "doc_id": "kimi-zh",
+      "language": "zh",
+      "model_family": "Kimi",
+      "source_hits": 12,
+      "rewritten_hits": 3,
+      "source_density": 1.54,
+      "rewritten_density": 0.41,
+      "density_delta": -1.13,
+      "hit_delta": -9
+    },
+    {
+      "doc_id": "minimax-zh",
+      "language": "zh",
+      "model_family": "Minimax",
+      "source_hits": 14,
+      "rewritten_hits": 5,
+      "source_density": 1.43,
+      "rewritten_density": 0.62,
+      "density_delta": -0.81,
+      "hit_delta": -9
+    }
+  ]
+}

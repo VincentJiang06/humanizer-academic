@@ -6,7 +6,7 @@ It keeps the original English humanizer coverage, adds Chinese-specific AI-writi
 
 ## Version
 
-Current version: `1.0.0`
+Current version: `1.2.0`
 
 On each update, keep the version in sync in:
 
@@ -55,19 +55,23 @@ Run the structure audit for the skill folder:
 python3 eval/scripts/audit_skill_structure.py
 ```
 
-Generate rewritten outputs for the full evaluation set:
+Generate rewritten outputs, score them, and compare against baseline in one round:
 
 ```bash
-python3 eval/scripts/run_codex_rewrites.py --output-dir eval/outputs/codex-gpt-5.4
+python3 eval/scripts/run_eval_round.py --round-id codex-gpt-5.4-v2 --force
 ```
 
-Compare source and rewritten heuristic scores:
+Current best full-round result:
+
+- `eval/results/codex-gpt-5.4-v2-compare.md`
+- Average rewritten density improved from `2.32` in the earlier full run to `1.50` in `v2`
+
+If you need to rerun only failed or changed documents, use the lower-level runner:
 
 ```bash
-python3 eval/scripts/compare_eval_results.py \
-  --rewritten eval/results/codex-gpt-5.4.json \
-  --json-out eval/results/codex-gpt-5.4-compare.json \
-  --md-out eval/results/codex-gpt-5.4-compare.md
+python3 eval/scripts/run_codex_rewrites.py \
+  --output-dir eval/outputs/codex-gpt-5.4-v2 \
+  --ids gpt-en grok-en
 ```
 
 Current generated reports live in `eval/results/`.

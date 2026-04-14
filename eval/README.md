@@ -16,6 +16,7 @@ This evaluation set contains ten AI-generated papers on one shared topic:
 - `scripts/run_baseline_eval.py`: heuristic baseline scan over the source documents
 - `scripts/audit_skill_structure.py`: no-dependency audit of the skill folder structure
 - `scripts/run_codex_rewrites.py`: batch rewrite runner using `codex exec`
+- `scripts/run_eval_round.py`: one-command rewrite + score + compare runner
 - `scripts/compare_eval_results.py`: before/after comparison over heuristic evaluation outputs
 - `outputs/`: generated rewritten papers and manifests
 - `results/`: generated baseline and audit reports
@@ -49,3 +50,8 @@ Score each rewrite on a 1-5 scale:
 - The rewrite removes necessary hedging or technical precision.
 - The rewrite introduces unsupported factual detail.
 - The rewrite keeps most of the original AI scaffolding and only swaps synonyms.
+
+## Current best round
+
+- Best current full-round output: `results/codex-gpt-5.4-v2-compare.md`
+- Average rewritten density: `1.50`
